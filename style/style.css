@@ -1,0 +1,102 @@
+HTML, BODY {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+#header {
+	height: 29px;
+	line-height: 29px;
+	border-bottom: 1px solid #FFF;
+	color: #FFF;
+	font-family: "Helvetica Neue";
+	padding: 0 20px 0 28px;
+	background: #336699 url(../icons/16.png) no-repeat 6px 6px;
+}
+#kill-btn {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 29px;
+	width: 29px;
+	overflow: hidden;
+	text-indent: -1000px;
+	background: url(../images/close.png) no-repeat center center;
+}
+#kill-btn:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+#drag-handle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 30px;
+	height: 30px;
+	-webkit-app-region: drag;
+}
+#options-wrap {
+	position: absolute;
+	left: 0;
+	top: 30px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	background-color: #F8F8F8;
+	box-shadow: 0 2px 2px #EEE;
+}
+#log-wrap {
+	position: absolute;
+	left: 0;
+	top: 80px;
+	bottom: 50px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 20px;
+	overflow-y: auto;
+	white-space: pre;
+	font-family: Consolas, monospace;
+	font-size: 13px;
+	line-height: 13px;
+}
+#message-wrap {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 4px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #F8F8F8;
+	box-shadow: 0 -2px 2px #EEE;
+}
+#message {
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 18px;
+}
+#clear-btn {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 90px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 6px;
+	border: 1px solid #EEE;
+	border-radius: 3px;
+	color: #CCC;
+	text-decoration: none;
+}
+#clear-btn:hover {
+	border-color: #CCC;
+	color: #666;
+	background-color: #F8F8F8;
+}
+.sent-message {
+	color: #900;
+	font-style: italic;
+}

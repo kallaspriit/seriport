@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="lib/jquery-2.0.2.js"></script>
+	<script src="src/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>Seriport</title>
+</head>
+<body>
+<div id="header"><strong>Seriport</strong> - Chrome Serial Port Tool <a id="kill-btn" href="#">Close</a></div>
+<div id="drag-handle"></div>
+<div id="options-wrap">
+	<label for="ports">Port:</label>
+	<select id="ports"></select>
+	<label for="bitrate">Bitrate:</label>
+	<select id="bitrate">
+		<option value="110">110</option>
+		<option value="300">300</option>
+		<option value="1200">1200</option>
+		<option value="2400">2400</option>
+		<option value="4800">4800</option>
+		<option value="9600" selected="selected">9600</option>
+		<option value="14400">14400</option>
+		<option value="19200">19200</option>
+		<option value="38400">38400</option>
+		<option value="57600">57600</option>
+		<option value="115200">115200</option>
+	</select>
+	<button id="open-btn">Open</button>
+	<button id="close-btn" disabled="disabled">Close</button>
+	<div style="float: right;">
+		<input type="checkbox" id="autoscroll" checked="checked"> <label for="autoscroll">autoscroll</label>
+	</div>
+</div>
+<div id="log-wrap"></div>
+<div id="message-wrap">
+	<input id="message" type="text" disabled="disabled">
+</div>
+<a id="clear-btn" href="#">Clear</a>
+</body>
+</html>

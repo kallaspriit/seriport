@@ -1,0 +1,14 @@
+{
+	"name": "Seriport",
+	"description": "Simple Chrome serial port communication application",
+	"version": "1.0",
+	"app": {
+		"background": {
+			"scripts": ["src/background.js"]
+		}
+	},
+	"icons": { "16": "icons/16.png", "128": "icons/128.png" },
+	"permissions": [
+		"serial"
+	]
+}
